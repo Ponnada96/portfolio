@@ -197,7 +197,7 @@ nav ul a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65rem;
+    height: 122rem;
     gap: 2;
     position: relative;
 }
@@ -283,7 +283,7 @@ nav ul a:hover {
 .project-main {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
+    margin-bottom: 4rem;
     gap: 3rem;
     position: relative;
 }
@@ -305,7 +305,7 @@ nav ul a:hover {
     position: relative;
     transition: all 1s ease-in-out;
     box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 2rem;
+    border-radius: 1.2rem;
 }
 
 .project-main p {
@@ -845,7 +845,6 @@ footer h3 {
         text-align: center;
     }
 }
-
 @media (max-width: 750px) {
     .contact__icon-box {
         flex-direction: column;
@@ -869,6 +868,15 @@ footer h3 {
     .img-side span {
         display: none;
     }
+
+    .project-main {
+        flex-direction: column;
+    }
+
+   .project {
+       padding: 8rem 0;
+       height: 140rem !important;
+   }
 }
 
 @media (max-width: 880px) {
@@ -960,6 +968,7 @@ footer h3 {
 
     .project {
         padding: 8rem 0;
+        height: 79rem;
     }
 
     .projects-grid .pro__1 {
@@ -989,9 +998,12 @@ footer h3 {
     }
 
     .project-main {
-        flex-direction: column;
         align-items: center;
     }
+
+    /* .project{
+        height: 100%;
+    } */
 
     .project-details {
         gap: 10px;
