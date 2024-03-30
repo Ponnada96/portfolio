@@ -120,7 +120,8 @@ body {
     list-style: none;
 }
 
-.mobile-nav ul a {
+.mobile-nav ul a,
+nav a {
     color: black;
     text-decoration: none;
     font-weight: 500;
@@ -223,6 +224,15 @@ nav ul a:hover {
     position: relative;
 }
 
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65rem;
+    gap:2;
+    position: relative;
+}
+
 @media (max-width: 900px) {
     .content {
         flex-direction: column;
@@ -298,6 +308,12 @@ nav ul a:hover {
         margin-bottom: 4rem;
         gap: 1.6rem;
     }
+        .hero-text .btn-container {
+            justify-content: center;
+            margin-top: -2.4rem;
+            margin-bottom: 4rem;
+            gap: 1.6rem;
+        }
 }
 
 .hero-text span a {
@@ -314,6 +330,22 @@ nav ul a:hover {
     height: 6rem;
     top: 8.7rem;
     right: 13rem;
+}
+
+.techstack {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.technology {
+    padding: 8px;
+    border-radius: 1rem;
+    background-color: #8B008B;
+    color: white;
+    font-weight: 500;
+    font-size: 11px;
 }
 
 @media (max-width: 900px) {
@@ -349,18 +381,114 @@ nav ul a:hover {
     }
 }
 
+
 .hero-img {
-    background-image: url("/src/images/pfp_webp.webp");
+    background-image: url("/assets/profileImage1.png");
     width: 35rem;
     height: 35rem;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    border: 3px solid #2d2e32;
-    animation: morph 8s ease-in-out infinite;
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     position: relative;
     transition: all 1s ease-in-out;
+}
+
+.project-main{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 1rem;
+    position: relative;
+}
+
+.project-details{
+    display: flex;
+    flex-direction: column;
+    max-width: 35rem;
+    gap: 6px;
+}
+.projectImage {
+    width: 100%;
+    height: 35rem;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 1s ease-in-out;
+    box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2rem;
+}
+.project-main p {
+    font-size: 1.5rem;
+    font-family: "Mulish", sans-serif;
+    color: #767676;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.project span {
+    display: flex;
+    gap: 1.3rem;
+    cursor: pointer;
+}
+
+.project span a {
+    font-size: 2rem;
+    color: #2d2e32;
+}
+
+@media (max-width: 500px) {
+    .hero-img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 1040px) {
+    .hero-main{
+        gap: 7;
+    }
+    .hero-img {
+        width: 28rem;
+        height: 28rem;
+    }
+}
+
+.btn-container {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 12rem;
+    border-radius: 2rem;
+}
+
+
+.btn-color-2 {
+    border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-2:hover {
+    cursor: pointer;
+}
+
+
+.btn-color-2:hover {
+    background: rgb(53, 53, 53);
+    color: white;
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
 }
 
 @media (max-width: 500px) {
@@ -809,7 +937,7 @@ nav ul a:hover {
     width: 3.5rem;
 }
 
-.links a:hover {
+.links a:hover , .project a:hover{
     color: #147efb;
     transition: all 0.3s;
 }
