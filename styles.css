@@ -283,7 +283,7 @@ nav ul a:hover {
 .project-main {
     display: flex;
     justify-content: center;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     gap: 3rem;
     position: relative;
 }
@@ -434,7 +434,7 @@ nav ul a:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.skills ul li h3{
+.skills ul li h3 {
     font-size: 1.6rem;
     color: #ffffff;
 }
@@ -830,11 +830,12 @@ footer h3 {
     flex-wrap: wrap;
 }
 
- .skill-box {
+.skill-box {
     display: flex;
     align-items: center;
     gap: 4px;
 }
+
 .skill-box h3 {
     font-size: 20px;
 }
@@ -844,6 +845,13 @@ footer h3 {
     height: 40px;
 }
 
+.project-details h1 {
+    font-size: 2.2rem;
+}
+
+ .project-main:nth-child(even) {
+     flex-direction: row-reverse;
+ }
 @media (max-width: 550px) {
     .footerc {
         flex-wrap: wrap;
@@ -881,6 +889,7 @@ footer h3 {
         text-align: center;
     }
 }
+
 @media (max-width: 750px) {
     .contact__icon-box {
         flex-direction: column;
@@ -906,13 +915,13 @@ footer h3 {
     }
 
     .project-main {
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
-   .project {
-       padding: 8rem 0;
-       height: 140rem !important;
-   }
+    .project {
+        padding: 8rem 0;
+        height: 140rem !important;
+    }
 }
 
 @media (max-width: 880px) {
@@ -1044,9 +1053,11 @@ footer h3 {
     .project-details {
         gap: 10px;
     }
-    .projectImage{
+
+    .projectImage {
         height: 30rem;
     }
+
 
     .text-side {
         max-width: 54rem;
@@ -1124,28 +1135,29 @@ footer h3 {
         height: 28rem;
     }
 
-@media (max-width: 500px) {
-    .hero-img {
-        width: 28rem;
-        height: 28rem;
+    @media (max-width: 500px) {
+        .hero-img {
+            width: 28rem;
+            height: 28rem;
+        }
     }
-}
 
-@media (max-width: 500px) {
-    .hero-text h1 {
-        font-size: 4rem;
+    @media (max-width: 500px) {
+        .hero-text h1 {
+            font-size: 4rem;
+        }
     }
-}
 
 
-@media (min-width: 1600px) {
-    .content {
-        margin-top: 6rem;
+    @media (min-width: 1600px) {
+        .content {
+            margin-top: 6rem;
+        }
     }
-}
 
-@media (min-width: 1900px) {
-    .content {
-        margin-top: 10rem;
+    @media (min-width: 1900px) {
+        .content {
+            margin-top: 10rem;
+        }
     }
 }
