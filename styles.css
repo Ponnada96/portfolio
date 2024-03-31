@@ -417,16 +417,31 @@ nav ul a:hover {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1.2rem;
 }
 
 .skills ul li {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.skills ul li {
+    padding: 8px;
+    background-color: #555555;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.skills ul li h3{
+    font-size: 1.6rem;
+    color: #ffffff;
 }
 
 .skills ul li img {
-    width: 11rem;
-    height: 5rem;
+    width: 2.6rem;
+    height: 2.6rem;
     transition: all ease-in-out 0.3s;
 }
 
@@ -806,6 +821,27 @@ footer h3 {
 .footerc__socials a:hover {
     transform: scale(1.2);
     transition: all 0.2s ease-in-out;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+ .skill-box {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.skill-box h3 {
+    font-size: 20px;
+}
+
+.skill-box img {
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 550px) {
